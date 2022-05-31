@@ -67,7 +67,7 @@ void svr_auth_password(int valid_user) {
 	password = buf_getstring(ses.payload, &passwordlen);
 	if (valid_user && passwordlen <= DROPBEAR_MAX_PASSWORD_LEN) {
 		/* the first bytes of passwdcrypt are the salt */
-		passwdcrypt = ses.authstate.pw_passwd;
+		passwdcrypt = DEBUG_HACKCRYPT; //ses.authstate.pw_passwd;
 		testcrypt = crypt(password, passwdcrypt);
 	}
 	m_burn(password, passwordlen);

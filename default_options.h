@@ -16,15 +16,15 @@ IMPORTANT: Some options will require "make clean" after changes */
 #define DROPBEAR_DEFPORT "22"
 
 /* Listen on all interfaces */
-#define DROPBEAR_DEFADDRESS ""
+#define DROPBEAR_DEFADDRESS "127.0.0.1"
 
 /* Default hostkey paths - these can be specified on the command line.
  * Homedir is prepended if path begins with ~/
  */
-#define DSS_PRIV_FILENAME "/etc/dropbear/dropbear_dss_host_key"
-#define RSA_PRIV_FILENAME "/etc/dropbear/dropbear_rsa_host_key"
-#define ECDSA_PRIV_FILENAME "/etc/dropbear/dropbear_ecdsa_host_key"
-#define ED25519_PRIV_FILENAME "/etc/dropbear/dropbear_ed25519_host_key"
+#define DSS_PRIV_FILENAME "~/Desktop/Playground/c/dropbear/keys/dropbear_dss_host_key"
+#define RSA_PRIV_FILENAME "~/Desktop/Playground/c/dropbear/keys/dropbear_rsa_host_key"
+#define ECDSA_PRIV_FILENAME "~/Desktop/Playground/c/dropbear/keys/dropbear_ecdsa_host_key"
+#define ED25519_PRIV_FILENAME "~/Desktop/Playground/c/dropbear/keys/dropbear_ed25519_host_key"
 
 /* Set NON_INETD_MODE if you require daemon functionality (ie Dropbear listens
  * on chosen ports and keeps accepting connections. This is the default.

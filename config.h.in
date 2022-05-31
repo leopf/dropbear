@@ -25,10 +25,10 @@
 #undef CONF_WTMP_FILE
 
 /* Disable use of lastlog() */
-#undef DISABLE_LASTLOG
+//#undef DISABLE_LASTLOG
 
 /* Use PAM */
-#undef DISABLE_PAM
+//#undef DISABLE_PAM
 
 /* Disable use of pututline() */
 #undef DISABLE_PUTUTLINE
@@ -37,7 +37,7 @@
 #undef DISABLE_PUTUTXLINE
 
 /* Using syslog */
-#undef DISABLE_SYSLOG
+//#undef DISABLE_SYSLOG
 
 /* Disable use of utmp */
 #undef DISABLE_UTMP
